@@ -10,5 +10,12 @@ $(document).ready(function() {
         var q3Result = $("#question3").val();
         var totalScore;
     });
-
+function band (decade){
+    if (decade === "10's"){
+        return 4;
+    }
+} function band (time){
+    if (decade === "10's"){
+        return 4;
+    }
 });
