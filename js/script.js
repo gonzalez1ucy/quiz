@@ -14,8 +14,28 @@ function band (decade){
     if (decade === "10's"){
         return 4;
     }
-} function band (time){
-    if (decade === "10's"){
-        return 4;
+} function band (decade){
+    if (decade === "90's"){
+        return 3;
     }
+} function band (decade){
+    if (decade === "80's"){
+        return 2;
 });
+function music (genre){
+    if (genre==="Indie"){
+        return 2;
+    }
+function music (genre){
+    if (genre==="Pop"){
+        return 3;
+} function music (genre){
+    if (genre==="Rap"){
+        return 4;
+ } function location (home){
+    if (home==="Big city"){
+        return 4;
+    }function location (home){
+    if (home==="Smalll town"){
+        return 3;
+    }
