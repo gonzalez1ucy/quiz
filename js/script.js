@@ -11,31 +11,40 @@ $(document).ready(function() {
         var totalScore;
     });
 function band (decade){
-    if (decade === "10's"){
-        return 4;
-    }
-} function band (decade){
-    if (decade === "90's"){
+    if (decade === "20's"){
+        return 4; 
+    } else if (decade="10's"){
         return 3;
+    } else if (decade === "90's"){
+        return 5;
     }
-} function band (decade){
-    if (decade === "80's"){
-        return 2;
-});
-function music (genre){
+}
+ function music (genre){
     if (genre==="Indie"){
-        return 2;
-    }
-function music (genre){
-    if (genre==="Pop"){
         return 3;
-} function music (genre){
-    if (genre==="Rap"){
+    } else if (genre === "Rap"){
         return 4;
- } function location (home){
-    if (home==="Big city"){
+    } else if (genre === "Pop")
+}
+  function location (home){
+    if (home === "Big city"){
         return 4;
-    }function location (home){
-    if (home==="Smalll town"){
+    } else if (home === "Small Town") { 
         return 3;
     }
+}
+    function totalScore () {
+        var q1Result = $("#question1").val();
+        var score = network (q1Result);
+        var q2Result = $("question2").val();
+        score = show (q2Result) + score;
+        var q3Result = $("#question3").val();
+        score === actors (q3Result) + score;
+        if (score>=10 || score<=14){ 
+            var finalvariable = "BrockHampton";
+        } else if (score >= 26 || score <=29 ){
+            finalvariable = "BackStreet Boys";
+        }
+        $("button").text(finalvariable);
+    }
+
